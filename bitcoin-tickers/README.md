@@ -8,7 +8,18 @@ application to compare bitcoin prices.
 Write an application to consume from 2 **REST APIs** (documented below). 
 These **APIs** will return **bitcoin** to currency prices.
 
-You must compare the **BTC** -> **USD** exchange rate returned from each endpoint and output the lowest **sell** price.
+You must compare the **BTC** -> **USD** exchange rate returned from each endpoint and output the lowest **sell** price to sysout.
+The output must contain the following:
+
+- Ticker Name.
+- BTC -> USD sell price.
+
+### Example Output:
+
+```json
+Name=Blockchain, SellPrice=46920.61
+```
+
 
 ## Endpoints
 
