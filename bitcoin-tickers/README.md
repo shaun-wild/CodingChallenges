@@ -14,10 +14,16 @@ The output must contain the following:
 - Ticker Name.
 - BTC -> USD sell price.
 
-### Example Output:
+### Example Program Output:
 
 ```json
 Name=Blockchain, SellPrice=46920.61
+```
+
+or
+
+```json
+Name=Bitcoin, SellPrice=46922.25
 ```
 
 
