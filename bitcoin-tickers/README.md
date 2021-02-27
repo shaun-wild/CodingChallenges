@@ -5,8 +5,10 @@ application to compare bitcoin prices.
 
 ## Specifications
 
-- Write an application to consume from 2 **REST APIs**.
-- You must compare the **BTC** -> **USD** exchange rate for each one and output the lowest **sell** price.
+Write an application to consume from 2 **REST APIs** (documented below). 
+These **APIs** will return **bitcoin** to currency prices.
+
+You must compare the **BTC** -> **USD** exchange rate returned from each endpoint and output the lowest **sell** price.
 
 ## Endpoints
 
@@ -52,13 +54,26 @@ Bitcoin    | https://api.exchange.bitcoin.com/api/2/public/ticker |
 ]
 ```
 
+HINT: The **ask** price is the **sell** price in this response.
+
 ## Rules
 
 You will be scored on the follow critera:
 
 - Good use of [design patterns](https://sourcemaking.com/design_patterns).
-- Testing.
-- Code readability.
-- Code runnability.
+- Unit/Integration testing.
+- Code **readability**.
+- Code **runnability**.
 
-The code will be pushed to a public git repo.
+The code will be pushed to a public git repo. 
+
+### Other Rules:
+
+- Please only submit **Java**, **Kotlin** or **Groovy** code. 
+
+- Please use **Gradle** or **Maven**, to make it easier for us to run your code.
+
+- Feel free to use any **frameworks/libraries** you like.
+
+
+Good luck!
