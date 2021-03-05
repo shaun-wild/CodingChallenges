@@ -24,6 +24,25 @@ values| Array\<Number\> | A list of numbers, can be whole or decimal. |
 operation | String | The operation to perform, possible values are: **add**, **sub**, **mul**, **div**. |
 type | String | The type of the expected result, possible values are: **integer**, **decimal**, **safe**.  |
 
+
+And will respond with a JSON object containing the result:
+
+```json
+HTTP 200
+{
+  "result": 26
+}
+```
+
+Or in the case of a user error:
+
+```json
+HTTP 400
+{
+  "error": "error reason"
+}
+```
+
 ### Types
 
 The type field is important, it can be one of three values: **integer**, **decimal**, **safe**. Information about 
