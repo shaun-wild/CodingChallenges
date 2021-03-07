@@ -2,7 +2,7 @@
 
 Bespoke Bitcoin Solutions Ltd. thank you for your work - helping them find out the lowest bitcoin prices. They have now
 decided, in a bid to save money, they're going to stop buying calculators for the office and instead, they're going to
-use a central web-based calculator.
+use a central web-based calculator. [Solution](../solutions/challenge-2)
 
 ## Specifications
 
@@ -64,7 +64,6 @@ add       | Will add all the values together | `[5, 10, 2] => 17`
 sub       | Will subtract all the values, starting at the left-most value, and ending at the right-most value. | `[10, 2, 2] => 6`
 mul       | Will multiply all the values together. | `[5, 5, 2] => 50`
 div       | Will divide all the values, starting at the left-most value, and ending at the right-most value. | `[10, 1, 2] => 5`
-
 
 ## Rules
 
