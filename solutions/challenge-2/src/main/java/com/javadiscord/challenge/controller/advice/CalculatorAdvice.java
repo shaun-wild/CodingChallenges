@@ -18,6 +18,11 @@ public class CalculatorAdvice {
     return onCalculatorException(new CalculatorException("values should not contain decimals if type is integer"));
   }
 
+  @ExceptionHandler(ArithmeticException.class)
+  public ResponseEntity<ErrorResponse> onMismatchedInputException(ArithmeticException exception) {
+    return onCalculatorException(new CalculatorException(exception.getMessage()));
+  }
+
   @ExceptionHandler(CalculatorException.class)
   public ResponseEntity<ErrorResponse> onCalculatorException(CalculatorException exception) {
     return ResponseEntity.badRequest().body(new ErrorResponse(exception.getMessage()));
